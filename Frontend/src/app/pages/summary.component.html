@@ -1,0 +1,60 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <!-- <div class="navbar-logo">Energy Insights</div> -->
+    <ul class="navbar-menu">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/reports">Reports</a></li>
+      <li><a href="/summary">Summary</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-right">
+    <span class="username">👤 {{ username }}</span>
+    <button (click)="logout()">Logout</button>
+  </div>
+</nav>
+
+<div class="dashboard-container">
+  <!-- Sidebar -->
+  <!-- <div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+      <li class="text-center"><a  href="/dashboard">Dashboard</a></li>
+      <li class="text-center"><a  href="/summary">Summary</a></li>
+      <li class="text-center"><a  href="/reports">Reports</a></li>
+      <li><button class="logout-btn text-center" (click)="logout()">Logout</button></li>
+    </ul>
+  </div> -->
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-header">
+      <h2>Summary Overview</h2>
+      <p>Insights into Solar and Wind Energy Adoption Over the Last 6 Months.</p>
+      <p><strong>Source:</strong> 
+        <a href="https://www.iea.org/" target="_blank">International Energy Agency (IEA)</a>, 
+        <a href="https://en.wikipedia.org/wiki/Renewable_energy" target="_blank">Wikipedia - Renewable Energy</a>
+      </p>
+    </div>
+  
+    <div class="chart-section">
+      <canvas class="summaryChartClass" id="summaryChart"></canvas>
+      <div class="chart-description">
+        <p>
+          This bar chart showcases the monthly adoption trends of major clean energy technologies from January to June. The data emphasizes:
+        </p>
+        <ul>
+          <li><strong>Solar Energy</strong> has seen a steady and significant rise, starting at 10 units in January and reaching 50 units in June, reflecting increased installations and favorable weather conditions.</li>
+          <li><strong>Wind Energy</strong> follows a similar upward trend, showing the highest growth to 60 units in June, attributed to policy incentives and technological advancements in offshore wind farms.</li>
+          <li><strong>Battery Storage</strong> adoption has surged from 18 to 70 units, indicating a strategic push toward energy storage systems that support grid stability and electric vehicles.</li>
+          <li><strong>Hydrogen</strong> usage has increased notably from 8 to 55 units, driven by industrial applications and government-backed green hydrogen projects.</li>
+          <li><strong>Hydropower</strong>, while more gradual in its rise (5 to 40 units), remains a reliable base-load source, especially in regions with existing infrastructure.</li>
+        </ul>
+        <p>
+          The data reflects a global shift toward diverse clean energy portfolios, with peak investments and deployments observed in the last two months. The consistent growth across all categories underscores the accelerating pace of renewable energy adoption.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>

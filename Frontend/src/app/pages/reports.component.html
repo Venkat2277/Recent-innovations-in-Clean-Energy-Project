@@ -1,0 +1,62 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <!-- <div class="navbar-logo">Energy Insights</div> -->
+    <ul class="navbar-menu">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/reports">Reports</a></li>
+      <li><a href="/summary">Summary</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-right">
+    <span class="username">👤 {{ username }}</span>
+    <button (click)="logout()">Logout</button>
+  </div>
+</nav>
+
+<div class="dashboard-container">
+  <!-- Sidebar -->
+  <!-- <div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+        <li class="text-center"><a  href="/dashboard">Dashboard</a></li>
+        <li class="text-center"><a  href="/summary">Summary</a></li>
+        <li class="text-center"><a  href="/reports">Reports</a></li>
+        <li><button class="logout-btn text-center" (click)="logout()">Logout</button></li>
+    </ul>
+  </div> -->
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-header">
+      <h2>Reports Overview</h2>
+      <p>Innovation Activity in Clean Energy Sectors for 2024.</p>
+      <p><strong>Source:</strong> 
+        <a href="https://www.weforum.org/" target="_blank">World Economic Forum (WEF)</a>, 
+        <a href="https://en.wikipedia.org/wiki/Renewable_energy" target="_blank">Wikipedia - Renewable Energy</a>
+      </p>
+    </div>
+    
+  
+    <div class="chart-section">
+      <canvas class="r1" id="reportsChart"></canvas>
+  
+      <div class="chart-description">
+        <p>
+          The pie chart titled <strong>"Innovation Activity by Sector"</strong> visualizes the distribution of research and development activity across key clean energy sectors for 2024. According to the data:
+        </p>
+        <ul>
+          <li><strong>Solar energy</strong> leads with the highest innovation activity score of <strong>95</strong>, reflecting significant investment in advanced photovoltaics, perovskite materials, and solar panel efficiency.</li>
+          <li><strong>Battery technologies</strong> follow closely with a score of <strong>90</strong>, emphasizing ongoing efforts in solid-state batteries and large-scale grid storage solutions.</li>
+          <li><strong>Wind energy</strong> has an activity score of <strong>85</strong>, boosted by next-gen turbine designs and offshore installations.</li>
+          <li><strong>Hydrogen</strong>, scoring <strong>75</strong>, is gaining momentum as a clean fuel, especially in sectors hard to decarbonize like shipping and heavy industry.</li>
+          <li><strong>Hydropower</strong>, with a score of <strong>50</strong>, reflects steady but comparatively lower innovation, as much of the infrastructure is mature and well-established.</li>
+        </ul>
+        <p>
+          These scores represent not just financial investments, but also the intensity of R&D, policy focus, and technological advancement within each sector. The data illustrates how the clean energy landscape is evolving with a strong tilt toward solar and storage technologies in 2024.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</div>

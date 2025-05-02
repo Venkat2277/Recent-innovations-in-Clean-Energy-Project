@@ -1,0 +1,75 @@
+<!-- dashboard.component.html -->
+
+<nav class="navbar">
+  <div class="navbar-left">
+    <!-- <div class="navbar-logo">Energy Insights</div> -->
+    <ul class="navbar-menu">
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/reports">Reports</a></li>
+      <li><a href="/summary">Summary</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-right">
+    <span class="username">👤 {{ username }}</span>
+    <button (click)="logout()">Logout</button>
+  </div>
+</nav>
+<div class="dashboard-container">
+   
+  <!-- <div class="sidebar">
+    
+    <h3>Menu</h3>
+    <ul>
+      <li class="text-center"><a  href="/dashboard">Dashboard</a></li>
+      <li class="text-center"><a  href="/summary">Summary</a></li>
+      <li class="text-center"><a  href="/reports">Reports</a></li>
+      <li><button class="logout-btn text-center" (click)="logout()">Logout</button></li>
+    </ul>
+  </div> -->
+
+  
+
+  <div class="main-content"> 
+    <div class="content-header">
+      <h2>Dashboard Overview</h2>
+      <p>
+        Recent innovations in <strong>Clean Energy</strong> over the past six months have accelerated progress in renewable technologies, energy storage, and carbon reduction. Research has focused on improving the efficiency and cost-effectiveness of solar panels using perovskite materials, while solid-state battery designs are revolutionizing energy storage for electric vehicles and grid systems.
+        Countries around the world are also investing in <a href="https://en.wikipedia.org/wiki/Green_hydrogen" target="_blank">green hydrogen</a> as a clean fuel alternative to fossil-based energy sources.
+      </p>
+      <p>
+        Innovations in wind energy include the development of ultra-efficient <a href="https://en.wikipedia.org/wiki/Wind_turbine" target="_blank">wind turbines</a> with larger blades and AI-based optimization. Meanwhile, microgrids and community solar projects are enabling decentralized power production and improving energy access in rural areas.
+        These systems enhance grid resilience and reduce transmission losses.
+      </p>
+      <p>
+        Artificial Intelligence is being applied to optimize energy consumption by predicting load patterns and integrating diverse renewable sources more efficiently. In tandem, smart grids and IoT-based sensors are helping monitor and manage power distribution in real time.
+      </p>
+      <p>
+        Clean energy innovation is not limited to generation and storage—it includes carbon capture, energy-efficient buildings, and sustainable transportation systems. Global funding and public-private partnerships are driving this transformation toward a carbon-neutral future.
+      </p>
+      <p><strong>Sources:</strong> 
+        <a href="https://en.wikipedia.org/wiki/Clean_energy" target="_blank">Wikipedia - Clean Energy</a>, 
+        <a href="https://www.energy.gov/eere/articles" target="_blank">Energy.gov Articles</a>
+      </p>
+    </div>
+  
+    <!-- Data Cards -->
+    <div class="data-cards">
+      <div class="card">
+        <h4>Active Projects</h4>
+        <p>10+ major clean energy initiatives underway</p>
+      </div>
+      <div class="card">
+        <h4>Energy Output</h4>
+        <p>5,000+ MW generated from renewables</p>
+      </div>
+      <div class="card">
+        <h4>Future Investments</h4>
+        <p>Over 50 Billion USD committed globally</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+</div>
